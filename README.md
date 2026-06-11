@@ -153,7 +153,7 @@ The YOLO node loads weights from `yolov8_ros/models/` (`best_15.pt` for detectio
 
 ```bash
 # 1) Go to the workspace root (the one that contains src/)
-cd ilayda_mkt_ws/ilayda_mkt_ws        # adjust if you flattened the folder
+cd mkt4846_project_ws/      # adjust if you flattened the folder
 
 # 2) Add the missing external packages into src/ if needed
 #    (darknet_ros_msgs, aesk_camera_driver)
@@ -261,7 +261,7 @@ match your sensor rig for the projection-based fusion to associate boxes correct
 ## 9. Repository layout
 
 ```
-ilayda_mkt_ws/ (workspace root, contains src/ and .catkin_workspace)
+mkt4846_project_ws/
 └── src/
     ├── CMakeLists.txt                  (catkin toplevel symlink)
     ├── yolov8_ros/                     YOLOv8 detection (Python, pkg name: ultralytics_ros)
