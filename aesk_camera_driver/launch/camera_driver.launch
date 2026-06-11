@@ -1,0 +1,16 @@
+<launch>
+
+    <node name="republish"
+        type="republish"
+        pkg="image_transport"
+        args="compressed in:=/spinnaker_ros_driver_node/cam_fm_01/image_raw raw out:=/spinnaker_ros_driver_node/cam_fm_01/image_raw" />
+
+    <node pkg="aesk_camera_driver" type="camera_driver" name="camera_driver_1" output="screen">
+        <rosparam command="load" file="$(find aesk_camera_driver)/config/spinnaker.yaml" />
+    </node>
+
+    <!-- <node pkg="aesk_camera_driver" type="camera_driver" name="camera_driver_2" output="screen">
+        <rosparam command="load" file="$(find aesk_camera_driver)/config/cv_camera.yaml" />
+    </node> -->
+
+</launch>
