@@ -1,4 +1,4 @@
-# ilayda_mkt_ws — Camera–LiDAR Fusion for Object Localization
+#Camera–LiDAR Fusion for Object Localization
 
 A ROS 1 (Noetic) catkin workspace that detects, localizes and tracks objects (e.g.
 traffic signs, traffic lights and vehicles) by **fusing a front camera with a 3D
